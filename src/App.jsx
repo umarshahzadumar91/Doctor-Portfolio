@@ -7,6 +7,7 @@ import EducationCertifications from './Components/EducationCertifications'
 import AreasOfExpertise from './Components/AreasOfExpertise '
 import WhatsAppButton from './Components/WhatsAppButton '
 import Contact from './Components/Contact'
+import Footer from './Components/Footer '
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
     <AreasOfExpertise/>
     <WhatsAppButton/>
     <Contact/>
+    <Footer/>
     </>
   )
 }

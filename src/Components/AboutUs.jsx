@@ -4,10 +4,10 @@ const AboutUs = () => {
   return (
     <div className="w-full bg-gray-50 px-4 py-10 md:py-16 flex justify-center">
       <div className="max-w-7xl w-full bg-white shadow-xl rounded-xl overflow-hidden">
-    
-    
+
+
         <div className="grid md:grid-cols-2 h-full">
-          
+
           {/* LEFT — IMAGE */}
           <div className="relative h-full">
             <img
@@ -30,22 +30,19 @@ const AboutUs = () => {
           <div className="p-8 md:p-12 flex flex-col justify-center bg-white h-full">
 
             <span className="text-xs font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full w-fit">
-              Board Certified Specialist
+              Gastroenterologist & Interventional Endoscopist
             </span>
 
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
-              Dr. Ghulam Abbas
+              Dr. Ghulam Abbas Gill
             </h1>
 
             <p className="text-blue-600 font-medium mt-2 mb-5 text-lg">
-              MD, FACC — Cardiology Specialist
+              MBBS, MCPS (Medicine) FCPS (Gastroenterology), CHPE (Medical Education)
             </p>
 
             <p className="text-gray-600 leading-relaxed text-lg max-w-xl">
-              With over 15 years of dedicated experience in cardiovascular medicine,
-              Dr. Mitchell combines cutting-edge medical expertise with
-              compassionate, patient-centered care. Her commitment to excellence
-              has made her one of the most trusted cardiologists in the region.
+              An experienced Gastroenterologist and Interventional Endoscopist, trusted for advanced diagnostics, therapeutic endoscopy, and comprehensive digestive care.
             </p>
 
             {/* STATS */}

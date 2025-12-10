@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IoLocation } from "react-icons/io5";
+import { FaPhoneAlt } from "react-icons/fa";
 import AppointmentModal from "./AppointmentModal";
 
 const Hero = () => {
@@ -6,40 +8,43 @@ const Hero = () => {
 
   return (
     <div
-      className="relative w- full h-[100vh] bg-cover bg-center bg-no-repeat"
+      className="relative w-full h-screen bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url('data:image/jpeg;base64,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')",
+          "url('https://www.shutterstock.com/shutterstock/videos/21346564/thumb/1.jpg?ip=x480')",
       }}
     >
-      <div className="absolute inset-0 bg-black/50"></div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
 
-      <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-24 text-white">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
-          We Provide medical Services <br /> Excellence in Healthcare
+      {/* Hero Content */}
+      <div className="absolute inset-0 flex flex-col justify-center items-start px-6 md:px-24 text-white max-w-4xl">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight drop-shadow-lg">
+         Professional,Precise<br/>Patient-Focused
         </h1>
 
-        <p className="mt-4 text-sm md:text-lg max-w-xl text-gray-200 drop-shadow-md">
-          We are committed to providing exceptional patient care and promoting
-          wellness in our community.
+        <p className="mt-4 text-sm sm:text-lg md:text-xl text-gray-200 drop-shadow-md max-w-xl">
+          My Profession is My Passion — Gastroenterologist, Hepatologist & Interventional Endoscopist
         </p>
 
         <button
           onClick={() => setIsModalOpen(true)}
-          className="mt-6 w-max px-6 py-3 bg-blue-600 hover:bg-blue-700 transition rounded-md font-semibold text-white shadow-lg"
+          className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 transition rounded-full font-semibold text-white shadow-lg text-sm sm:text-base"
         >
           Book an Appointment
         </button>
       </div>
 
-      <div className="absolute bottom-6 left-6 flex items-center gap-2 text-sm text-gray-200">
-        <span className="text-xl">📍</span>
-        <p>1234 Washington Ave. Manchester, Kentucky 39495.</p>
-      </div>
-
-      <div className="absolute bottom-6 right-6 flex items-center gap-2 text-sm text-gray-200">
-        <span className="text-xl">📞</span>
-        <p>(406) 555-0121</p>
+      {/* Bottom Info */}
+      <div className="absolute bottom-6 left-6 flex flex-col sm:flex-row items-start sm:items-center gap-2 text-sm sm:text-base text-gray-200 justify-between">
+        <div className="flex items-center justify-between gap-2">
+          <span className="text-xl"><IoLocation /></span>
+          <p>1234 Washington Ave, Manchester, KY 39495</p>
+        </div>
+        <div className="flex items-center gap-2 mt-2 sm:mt-0">
+          <span className="text-xl"><FaPhoneAlt /></span>
+          <p>(406) 555-0121</p>
+        </div>
       </div>
 
       {/* Appointment Modal */}

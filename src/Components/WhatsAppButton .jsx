@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineWhatsapp } from "react-icons/md";
 
-const WhatsAppButton = ({ phone = "+923013965826" }) => {
+const WhatsAppButton = ({ phone = "+923337223326" }) => {
   return (
     <a
       href={`https://wa.me/${phone.replace("+", "")}`}
